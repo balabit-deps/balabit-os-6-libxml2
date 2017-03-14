@@ -1,3 +1,33 @@
+libxml2 (2.9.3+dfsg1-1ubuntu0.2) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: format string vulnerabilities
+    - debian/patches/CVE-2016-4448-1.patch: fix format string warnings in
+      HTMLparser.c, SAX2.c, catalog.c, configure.ac, debugXML.c,
+      encoding.c, entities.c, error.c, include/libxml/parserInternals.h,
+      include/libxml/xmlerror.h, include/libxml/xmlstring.h, libxml.h,
+      parser.c, parserInternals.c, relaxng.c, schematron.c, testModule.c,
+      valid.c, xinclude.c, xmlIO.c, xmllint.c, xmlreader.c, xmlschemas.c,
+      xmlstring.c, xmlwriter.c, xpath.c, xpointer.c.
+    - debian/patches/CVE-2016-4448-2.patch: fix format string warnings in
+      libxml.h, relaxng.c, xmlschemas.c, xmlstring.c.
+    - debian/libxml2.symbols: added new symbol.
+    - CVE-2016-4448
+  * SECURITY UPDATE: use-after-free via namespace nodes in XPointer ranges
+    - debian/patches/CVE-2016-4658.patch: disallow namespace nodes in
+      XPointer ranges in xpointer.c.
+    - CVE-2016-4658
+  * SECURITY UPDATE: use-after-free in XPointer range-to function
+    - debian/patches/CVE-2016-5131-1.patch: fix XPointer paths beginning
+      with range-to in xpath.c, xpointer.c.
+    - debian/patches/CVE-2016-5131-2.patch: fix comparison with root node
+      in xmlXPathCmpNodes in xpath.c.
+    - CVE-2016-5131
+  * debian/patches/lp1652325.patch: XML push parser fails with bogus
+    UTF-8 encoding error when multi-byte character in large CDATA section
+    is split across buffer (LP: #1652325)
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 14 Mar 2017 16:06:13 -0400
+
 libxml2 (2.9.3+dfsg1-1ubuntu0.1) xenial-security; urgency=medium
 
   * SECURITY UPDATE: heap-based buffer overread in xmlNextChar

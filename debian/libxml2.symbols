@@ -143,6 +143,7 @@ libxml2.so.2 libxml2 #MINVER#
  xmlDictGetUsage@LIBXML2_2.9.0 2.9.0
  xmlDictSetLimit@LIBXML2_2.9.0 2.9.0
  xmlEncodeAttributeEntities@Base 2.9.0
+ xmlEscapeFormatString@Base 2.9.3+dfsg1-1ubuntu0.2
  xmlGenericErrorDefaultFunc@Base 2.6.27
  xmlInitializeDict@LIBXML2_2.8.0 2.8.0
  xmlMallocBreakpoint@Base 2.6.27
