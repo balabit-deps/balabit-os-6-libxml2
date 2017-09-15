@@ -1,3 +1,28 @@
+libxml2 (2.9.3+dfsg1-1ubuntu0.3) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: type confusion leading to out-of-bounds write
+    - debian/patches/CVE-2017-0663.patch: eliminate cast
+    - CVE-2017-0663
+  * SECURITY UPDATE: XML external entity (XXE) vulnerability
+    - debian/patches/CVE-2017-7375.patch: add validation for parsed
+      entity references
+    - CVE-2017-7375
+  * SECURITY UPDATE: buffer overflow in URL handling
+    - debian/patches/CVE-2017-7376.patch: allocate enough memory for
+      ports in HTTP redirect support
+    - CVE-2017-7376
+  * SECURITY UPDATE: buffer overflows in xmlSnprintfElementContent()
+    - debian/patches/CVE-2017-9047-9048.patch: ensure enough space
+      remains in buffer for copied data
+    - CVE-2017-9047, CVE-2017-9048
+  * SECURITY UPDATE: heap based buffer overreads in
+    xmlDictComputeFastKey()
+    - debian/patches/CVE-2017-9049-9050.patch: drop uneccessary
+      expansions, add additional sanity check
+    - CVE-2017-9049, CVE-2017-9050
+
+ -- Steve Beattie <sbeattie@ubuntu.com>  Fri, 15 Sep 2017 16:00:14 -0700
+
 libxml2 (2.9.3+dfsg1-1ubuntu0.2) xenial-security; urgency=medium
 
   * SECURITY UPDATE: format string vulnerabilities
