@@ -1,3 +1,19 @@
+libxml2 (2.9.3+dfsg1-1ubuntu0.5) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: use after-free in xmlXPathCompOpEvalPositionPredicate
+    - debian/patches/CVE-2017-15412.patch: fix XPath stack frame logic in
+      xpath.c.
+    - CVE-2017-15412
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 11 Dec 2017 13:29:09 -0300
+
+libxml2 (2.9.3+dfsg1-1ubuntu0.4) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: infinite recursion in parameter entities
+    - CVE-2017-16932
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 04 Dec 2017 15:20:29 -0300
+
 libxml2 (2.9.3+dfsg1-1ubuntu0.3) xenial-security; urgency=medium
 
   * SECURITY UPDATE: type confusion leading to out-of-bounds write
