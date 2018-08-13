@@ -1,3 +1,20 @@
+libxml2 (2.9.3+dfsg1-1ubuntu0.6) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: XXE attacks
+    - debian/patches/CVE-2016-9318.patch: fix in parser.c.
+    - CVE-2016-9318
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2017-18258.patch: fix in xzlib.c.
+    - CVE-2017-18258
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2018-14404.patch: fix in xpath.c.
+    - CVE-2018-14404
+  * SECURITY UPDATE: Infinite loop in LZMA decompression
+    - debian/patches/CVE-2018-14567.patch: fix in xzlib.c.
+    - CVE-2018-14567
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 13 Aug 2018 16:49:50 -0300
+
 libxml2 (2.9.3+dfsg1-1ubuntu0.5) xenial-security; urgency=medium
 
   * SECURITY UPDATE: use after-free in xmlXPathCompOpEvalPositionPredicate
